@@ -1,0 +1,97 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    height: 100vh;
+}
+
+.part {
+    position: absolute;
+    display: flex;
+    transform-origin: 0;
+    transition: all ease 1s;
+    background-color: #fff;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.part .img {
+    width: 50%;
+    height: 100%;
+}
+
+.part .description {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.part .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.presentation{
+    width: 60%;
+    color: gray;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.price{
+    margin-top: 5rem;
+    color: rgb(0, 163, 0);
+    font-size: 22px;
+}
+
+.buttons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+}
+
+.button{
+    margin: 0 2rem;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 3rem;
+    opacity: 0.5;
+    transition: all ease .5s;
+}
+
+.button:hover{
+    opacity: 0.9;
+}
+
+.part-rotate{
+    transform: rotateY(90deg);
+}
+
+.part-rotate-origin{
+    transform: rotateY(0deg);
+}
+
+#part-1{
+    z-index: 998;
+}
+#part-2{
+    z-index: 997;
+}
+#part-3{
+    z-index: 996;
+}
+#part-4{
+    z-index: 995;
+}
+#part-5{
+    z-index: 994;
+}
